@@ -1,3 +1,4 @@
+/* [ START ] Main Rules */
 * {
 	margin: 0;
 	padding: 0;
@@ -5,4 +6,81 @@
 }
 body {
 	font-family: 'Inter', sans-serif;
+	background-color: #141414;
+	min-height: 100dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+/* [ END ] Main Rules */
+
+/* [ START ] Main Section STYLE */
+main {
+	padding: 2.5rem;
+	background-color: #1f1f1f;
+	border-radius: 0.75rem;
+	background: var(--Dark-Grey, #1f1f1f);
+	max-width: 24rem;
+	display: flex;
+	flex-direction: column;
+	/* row-gap: 1.5rem; */
+	align-items: center;
+}
+@media screen and (max-width: 768px) {
+	main {
+		max-width: 20.438rem;
+		padding: 1.5rem;
+	}
+}
+main img {
+	width: 88px;
+	border-radius: 50%;
+	margin-bottom: 24px;
+}
+main h2 {
+	color: #ffffff;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	font-weight: 600;
+	display: flex;
+	flex-direction: column;
+	row-gap: 4px;
+	margin-bottom: 24px;
+}
+main h2 span {
+	color: #c4f82a;
+	font-size: 14px;
+	font-weight: 700;
+}
+main p {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #ffffff;
+	margin-bottom: 24px;
+}
+main button {
+	width: 19rem;
+	padding: 12px;
+	border: none;
+	border-radius: 0.5rem;
+	color: #ffffff;
+	background-color: #333333;
+	align-self: stretch;
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 700;
+	cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+	main button {
+		max-width: 17.438rem;
+	}
+}
+main button:not(:last-of-type) {
+	margin-bottom: 16px;
+}
+main button:hover {
+	background-color: #c4f82a;
+	color: #333333;
+}
+/* [ END ] Main Section STYLE  */
